@@ -17,12 +17,12 @@ public class Demo {
         String endpoint = "https://oss-cn-hangzhou.aliyuncs.com";
         // 从环境变量中获取访问凭证。运行本代码示例之前，请确保已设置环境变量OSS_ACCESS_KEY_ID和OSS_ACCESS_KEY_SECRET。
         //EnvironmentVariableCredentialsProvider credentialsProvider = CredentialsProviderFactory.newEnvironmentVariableCredentialsProvider();
-        String AccessKeyId = "LTAI5tK9wsn1hFuPdDYYFHNL";
-        String AccessKeySecret = "pjghKxD6kvUoZNNf7MMBfFu8x3Fo6M";
+        String AccessKeyId = 
+        String AccessKeySecret = 
         // 填写Bucket名称，例如examplebucket。
-        String bucketName = "jaygesbucket";
+        String bucketName = 
         // 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。
-        String objectName = "全平台头像.jpg";
+        String objectName = 
 
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint,AccessKeyId,AccessKeySecret);
