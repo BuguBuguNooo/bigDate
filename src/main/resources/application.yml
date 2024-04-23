@@ -1,0 +1,47 @@
+#通用信息
+spring:
+  profiles:
+    active: dev
+
+
+# 哈哈
+---
+#开发环境
+
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://118.178.242.167:3306/big_event?useSSL=false&serverTimezone=UTC
+    username: Gpp
+    password: gfjxy520!
+  config:
+    activate:
+      on-profile: dev
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名和下划线命名的映射
+
+---
+
+#测试环境
+
+server:
+  port: 8082
+spring:
+  config:
+    activate:
+      on-profile: test
+
+---
+
+#生产环境
+
+server:
+  port: 8083
+spring:
+  config:
+    activate:
+      on-profile: prod
